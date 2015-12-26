@@ -5,29 +5,31 @@
     <title></title>
     <meta name="viewport" content="width=device-width ,initial-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="index.css" type="text/css"/>
+    <!--<link type="text/css" rel="stylesheet" href="animate.css"/>-->
 </head>
 <body>
 <div id="main">
-    <ul class="slide">
+ y   <ul class="slide">
         <li >
             <div class="a1">
 
-                <p>怎么样？</p>
-                <p>还不错吧！？</p>
-                <p>如果你对我有兴趣</p>
-                <p>请联系我吧！ </p>
-
+                <p class="b1">热爱生活</p>
+                <p class="b2">喜爱编程</p>
+                <p class="b3">团队精神</p>
+                <p class="b4">乐于奉献</p>
+                <p class="b5">擅长沟通</p>
+                <p class="b6">为人谦和</p>
+                <p class="b7">自我评价</p>
             </div>
         </li>
         <li >
             <div class="a2">
                 <h2>IT技能</h2>
-                <p>1,对WEB标准有良好认识，了解标签语义化</p>
-                <p>2,熟练使用JavaScript及Ajax、JSON等前端技术的原理进行开发</p>
-                <p>3,了解jQuery类库，阅读过其部分源码</p>
-                <p>4,对JS中的面向对象及设计模式有一定了解 </p>
-                <p>5,了解jQuery类库，阅读过其部分源码</p>
-                <p>6,对JS中的面向对象及设计模式有一定了解 </p>
+                <p>对WEB标准有良好认识，了解标签语义化;对JS中的面向对象及设计模式有一定了解</p>
+                <p>了解使JavaScript及Ajax、JSON等前端技术的原理进行开发</p>
+                <p>了解jQuery类库，阅读过其部分源码</p>
+                <p>运用ajax技术与后台处理数据，浏览器和服务器交互机制，依据接口文档与后台进行交互。</p>
+
             </div>
         </li>>
 
@@ -70,7 +72,13 @@
         <li >
             <div class="a4">
                 <h2>个人信息</h2>
-                <p><img src="img/bg4.png" alt=""/></p>
+                <p>姓名：乔英</p>
+                <p>毕业院校：邯郸大学</p>
+                <p>学历：大学专科</p>
+                <p>专业：企业管理</p>
+                <p>求职意向：前端开发工程师</p>
+                <p>E-mail：2830715922@qq.com</p>
+                <p>phone:15210236190</p>
 
             </div>
         </li>
@@ -80,26 +88,40 @@
                 <p class="b4"><img src="img/my.png" alt=""/></p>
 
                 <p>姓名：乔英</p>
-
-                <p>求职意向：前端工程师</p>
-
+                <p>籍贯：河北 邯郸</p>
+                <p>求职意向：前端开发工程师</p>
                 <p>毕业院校：邯郸大学</p>
-
                 <p>电话：15210236190</p>
+                <p>E-mail：2830715922@qq.com</p>
             </div>
         </li>
         <li>
             <div class="a6">
                 <p>乔英的简历</p>
-
-                <p><img src="img/erweima.png" alt=""/></p>
+                <p>Personal Resume</p>
 
             </div>
         </li>
 
 
     </ul>
+    <div id="bottom" class="bottom animated bounce infinite">
+        <span ></span>
+    </div>
+    <div class="off  video_exist rotate" style="display: block" id="sound">
+        <audio id="music" src="yq0KXFXvlMSATBOwAAwXyPe-DX4579.mp3" preload="auto" loop></audio>
+    </div>
 </div>
+
+
 </body>
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+    window.setTimeout(function () {
+        var oList = document.querySelectorAll(".a4>p");
+        for (var i = 0; i < oList.length; i++) {
+            oList[i].className = "move";
+        }
+    }, 200);
+</script>
 </html>
