@@ -95,7 +95,7 @@ html,body{
 
     float: left;
     margin-bottom: 15px;
-    width: 585px;
+    width: 575px;
     height: 70px;
     background: #FFFFFF;
     opacity: 0.4;
@@ -152,7 +152,7 @@ h2{
 
     float: left;
     margin-bottom: 15px;
-    width: 585px;
+    width: 575px;
     height: 70px;
     background: #FFFFFF;
     opacity: 0.4;
@@ -203,9 +203,9 @@ h2{
     top: 10%;
     bottom: 0;
     color: #fff;
-    line-height: 50px;
+    line-height: 48px;
     font-size: 28px;
-    padding: 67px;
+    padding: 55px;
     background: url("img/icon.png")repeat-y left;
 
 }
@@ -232,8 +232,8 @@ h2{
 
 .a2 h2{
     position: absolute;
-    top: -10%;
-    left: 15%;
+    top: 5%;
+    left: 18%;
     font-size: 40px;
     color: white;
     margin: -27px 0 0 -80px;
@@ -242,7 +242,7 @@ h2{
 
 
 .a2 p{
-    margin-top:5% ;
+    margin-top:13% ;
     text-align: center;
     box-shadow: 1px 1px 10px rgba(255,255,255,0.8);
     color: #fff;
@@ -261,19 +261,19 @@ h2{
 }
 .a2 p:nth-child(2){
 
- top: 23.5%;
+ top: 20%;
 }
 .a2 p:nth-child(3){
 
-    top: 47%;
+    top: 40%;
 }
 .a2 p:nth-child(4){
 
-    top: 70.5%;
+    top: 60%;
 }
 #a2 p{
     width: 545px;
-    height: 200px;
+    height: 150px;
     -webkit-transition: 1s; text-align: left;
     line-height: 60px;
     color: #FFFFFF;
