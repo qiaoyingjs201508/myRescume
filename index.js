@@ -17,6 +17,7 @@ if (desW / desH < winW / winH) {
     arguments[0].addEventListener('touchmove', move, false);
     arguments[0].addEventListener('touchend', end, false);
 });
+
 function start(e) {
     music.play();
     this.startY = e.changedTouches[0].pageY;
@@ -57,6 +58,31 @@ function end(e) {
         this.firstElementChild.id = "a" + (this.index + 1);
     })
 }
-sound.addEventListener("click", function () {
-    music.pause();
-},false);
+window.addEventListener("load", function () {
+    var musicAudio = document.querySelector("#musicAudio");
+    var music = document.querySelector(".music");
+
+    musicAudio.addEventListener("canplay", function () {
+        music.style.display = "block";
+        music.className = "music move";
+    }, false);
+    musicAudio.play();
+
+    $t.tap(music, {
+        end: function (e) {
+            if (musicAudio.paused) {
+                musicAudio.play();
+                this.className = "music move";
+                return;
+            }
+            musicAudio.pause();
+            this.className = "music";
+        }
+    });
+}, false);
+
+//init on-page
+window.setTimeout(function () {
+    pageList[0].className = "pageDemo move";
+}, 0);
+
